@@ -1,0 +1,7 @@
+# Old example files
+MP4 to MP3 converter.html
+MP4 to MP3 converter_files/
+
+# System files
+.DS_Store
+Thumbs.db 

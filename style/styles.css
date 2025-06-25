@@ -1,0 +1,223 @@
+:root {
+    --bg-color: #f7f9fc;
+    --text-color-headings: #1A293E;
+    --text-color-body: #1A293E;
+    --text-color-nav: #5b6b78;
+    --header-bg: #fff;
+    --header-border: #e1e8ed;
+    --button-text: #1A293E;
+    --button-border: #1A293E;
+    --button-hover-bg: #1A293E;
+    --button-hover-text: #fff;
+    --contact-box-bg: #e8f5fd;
+    --contact-box-link: #1d9bf0;
+}
+
+body.dark-theme {
+    --bg-color: #0d1a26;
+    --text-color-headings: #f7f9fc;
+    --text-color-body: #e1e8ed;
+    --text-color-nav: #e1e8ed;
+    --header-bg: #29405f;
+    --header-border: #0d1a26;
+    --button-text: #f7f9fc;
+    --button-border: #f7f9fc;
+    --button-hover-bg: #f7f9fc;
+    --button-hover-text: #1A293E;
+    --contact-box-bg: #1A293E;
+    --contact-box-link: #e8f5fd;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color-body);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 20px 0;
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--header-border);
+    transition: background-color 0.3s, border-bottom-color 0.3s;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color-headings);
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color-nav);
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #1d9bf0;
+}
+
+.button {
+    text-decoration: none;
+    color: var(--button-text);
+    border: 1px solid var(--button-border);
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-text);
+}
+
+.button-primary {
+    background-color: #1d9bf0;
+    color: #fff;
+}
+
+.button-primary:hover {
+    background-color: #1a8cd8;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.main-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--text-color-headings);
+    max-width: 675px;
+    width: 100%;
+}
+
+.main-content p {
+    font-size: 18px;
+    color: var(--text-color-body);
+    max-width: 600px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.main-content .button {
+    font-size: 18px;
+    padding: 15px 30px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.main-content .button img {
+    margin-right: 10px;
+}
+
+.main-content h2 {
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--text-color-headings);
+}
+
+.contact-section {
+    padding: 80px 20px;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--text-color-headings);
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: var(--text-color-body);
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    background-color: var(--contact-box-bg);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.contact-box a {
+    color: var(--contact-box-link);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.welcome-page h1,
+.welcome-page h2,
+.welcome-page p {
+    text-align: left;
+    max-width: 675px;
+    width: 100%;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.theme-switcher {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.dark-theme .logo img {
+    filter: none;
+}
+
+.theme-switcher .icon {
+    width: 24px;
+    height: 24px;
+    color: var(--text-color-nav);
+    transition: color 0.3s;
+}
+
+.theme-switcher:hover .icon {
+    color: var(--text-color-headings);
+}
+
+.theme-switcher .sun-icon { display: block; }
+.theme-switcher .moon-icon { display: none; }
+
+body.dark-theme .theme-switcher .sun-icon { display: none; }
+body.dark-theme .theme-switcher .moon-icon { display: block; } 

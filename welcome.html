@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - UI Testing Inspector</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo" width="32" height="32">
+                <span>UI Testing Inspector</span>
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact us</a>
+                <a href="welcome.html">Welcome</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="button" style="visibility: hidden; pointer-events: none;" aria-hidden="true">Install the extension</a>
+                <button id="theme-switcher" class="theme-switcher" aria-label="Toggle theme">
+                    <svg class="icon sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    <svg class="icon moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content welcome-page">
+        <h1>🎉 Now you have a great way to spot visual changes instantly</h1>
+        <p>1. Pin the extension for quick access to the UI Testing Inspector.</p>
+        <img src="img/2steps.png" alt="Pin the extension" style="width: 675px; height: 400px; max-width: 100%; border-radius: 12px; margin: 20px 0;">
+        <p>2. Simply click on the extension icon to open the inspector.</p>
+        <img src="img/step3.png" alt="Open the inspector" style="width: 675px; height: 400px; max-width: 100%; border-radius: 12px; margin: 20px 0;">
+
+        <h2>How to use the extension</h2>
+        <p>1️⃣  Navigate to the page you want to test and click "Set Baseline" in the extension popup. This is your source of truth.</p>
+        <img src="img/Baseline.png" alt="Set Baseline" style="width: 675px; max-width: 100%; border-radius: 12px; margin: 20px 0;">
+        <p>2️⃣  Make changes to your CSS, update content, or refactor components.</p>
+        <p>3️⃣  After updates click "Compare with Baseline". A new tab will open with a detailed visual report.</p>
+        <img src="img/Compare.png" alt="Compare with Baseline" style="width: 675px; max-width: 100%; border-radius: 12px; margin: 20px 0;">
+        <p>4️⃣  Get Detailed Visual Diff Report with DOM analysis.</p>
+        <img src="img/Report.png" alt="Detailed Report" style="width: 675px; max-width: 100%; border-radius: 12px; margin: 20px 0;">
+        <p>5️⃣  Happy with the new webpage version?!<br> Simply click "Set Baseline" again to save the new look as your reference.</p>
+
+       
+    </main>
+
+    <script src="js/theme.js"></script>
+</body>
+</html> 
