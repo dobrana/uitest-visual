@@ -238,7 +238,7 @@ body.dark-theme .theme-switcher .moon-icon { display: block; }
     font-size: 36px;
     margin-bottom: 20px;
     color: var(--text-color-headings);
-    text-align: center;
+    text-align: left;
 }
 
 .privacy-page h2 {
